@@ -1,14 +1,27 @@
-import reactSvg from "../assets/react.svg";
 import "../css/Header.css";
 
 function Header() {
   return (
-    <div className="header">
-      <div className="logo">
-        <img src={reactSvg} alt="" />
+    <>
+      <div className="header">
+        <ul className="navbar">
+          <li>Home</li>
+          <li>Genre</li>
+          <li>Languages</li>
+          <li>Movies</li>
+          <li>Animated</li>
+        </ul>
+        <ul>
+          <li>
+            <input
+              className="search-box"
+              type="text"
+              placeholder="Search Your Movie/Shows/Anime"
+            />
+          </li>
+        </ul>
       </div>
-      <div className="sandWitch_bar"></div>
-    </div>
+    </>
   );
 }
 export default Header;
