@@ -1,0 +1,22 @@
+.info {
+  color: var(--info-card-color);
+  margin: 4rem auto;
+  width: 60%;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(100% / 3);
+  gap: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .icon span {
+  font-size: 5rem;
+}
