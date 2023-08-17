@@ -1,21 +1,15 @@
-import "./css/App.css";
-import Searchbox from "./components/Searchbox";
-import Info from "./components/Info";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+
 
 function App() {
   return (
     <>
-      <div className="main">
-        <div className="hero_img">
-          <div className="img_container">
-            <div className="image"></div>
-            <div className="linear_gradient"></div>
-            <h1>Movie Stream</h1>
-          </div>
-          <Searchbox />
-        </div>
-        <Info />
-      </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }
