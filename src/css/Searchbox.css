@@ -1,9 +1,3 @@
-input,
-button {
-    border: none;
-    outline: none;
-}
-
 .search_container {
   padding: 0 1rem;
   border-radius: 5px;
@@ -39,4 +33,8 @@ button {
   width: 100%;
   display: flex;
   align-items: center;
+}
+
+#search_btn {
+  display: flex;
 }

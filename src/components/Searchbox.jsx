@@ -9,11 +9,11 @@ const Searchbox = () => {
           id="search"
           placeholder="Search your movie/show/anime"
           name="q"
-          required
           autoComplete="off"
+          required
         />
-        <button id="search_btn flex" type="submit">
-          <span className="material-icons-round flex">search</span>
+        <button id="search_btn" type="submit">
+          <span className="material-icons-round">search</span>
         </button>
       </div>
     </form>

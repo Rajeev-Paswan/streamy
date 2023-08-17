@@ -23,4 +23,22 @@ html {
   width: 100vw;
   height: 100vh;
   background-color: var(--color-2);
+  color: #fff;
+  font-family: Poppins;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+.material-icons-round {
+  display: flex;
 }
