@@ -12,7 +12,7 @@ function Home() {
             <div className="linear_gradient"></div>
             <h1>Movie Stream</h1>
           </div>
-          <Searchbox />
+          <Searchbox className="search_container floating"/>
         </div>
         <Info />
       </div>

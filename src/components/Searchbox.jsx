@@ -1,8 +1,15 @@
-import "../css/Searchbox.css"
+import "../css/Searchbox.css";
+import { useNavigate } from "react-router-dom";
 
-const Searchbox = () => {
+const Searchbox = props => {
+  const navigator = useNavigate();
+  function getResults(e) {
+    e.preventDefault();
+    navigator("/search?q=" + e.target.search.value);
+  }
+
   return (
-    <form className="search_container">
+    <form className={props.className} onSubmit={getResults}>
       <div className="search_child_container">
         <input
           type="text"

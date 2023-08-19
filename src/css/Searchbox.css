@@ -1,18 +1,21 @@
 .search_container {
   padding: 0 1rem;
   border-radius: 5px;
-  width: 60%;
   height: 4rem;
   background: var(--color-1);
-  position: absolute;
-  left: 50%;
-  top: calc(100% - 2rem);
-  transform: translateX(-50%);
 }
 
 .search_container input {
   font-size: 1.2rem;
   width: 100%;
+}
+
+.search_container.floating {
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  top: calc(100% - 2rem);
+  transform: translateX(-50%);
 }
 
 .search_container input::placeholder {
