@@ -8,8 +8,9 @@
 }
 
 .result_cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
     gap: 2rem;
 }
 

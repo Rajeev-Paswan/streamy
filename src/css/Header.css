@@ -21,6 +21,7 @@
 }
 
 .nav_bar.search_container {
+    visibility: hidden;
     padding: 0 2rem;
     border-radius: 9rem;
     position: relative;
