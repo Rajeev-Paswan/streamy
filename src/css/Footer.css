@@ -1,0 +1,8 @@
+.footer_container {
+    margin-top: 4rem;
+    background-color: var(--movie-card-color-2);
+}
+
+.footer_text {
+    text-align: center;
+}

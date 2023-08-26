@@ -1,5 +1,5 @@
 import "../css/Result.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Searchbox from "./Searchbox";
 import ResultCard from "./ResultCard";
 
@@ -8,7 +8,7 @@ const Result = () => {
   function renderCardLoop() {
     let cards = [];
     for (let i = 0; i < 10; i++) {
-      cards.push(<ResultCard key={i} />);
+      cards.push(<ResultCard key={i}/>);
     }
     return cards;
   }

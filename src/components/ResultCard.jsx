@@ -1,4 +1,9 @@
-function ResultCard(props) {
+import { useContext } from "react";
+import { AppContext } from "../components/Context";
+
+function ResultCard() {
+
+
   return (
     <a className="video_card" href="">
       <div className="video_showcase">

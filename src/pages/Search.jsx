@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Result from "../components/Result";
+import Footer from "../components/Footer";
 import "../css/Search.css";
 
 const Search = () => {
@@ -7,6 +8,7 @@ const Search = () => {
     <div>
       <Header />
       <Result />
+      <Footer />
     </div>
   );
 };
