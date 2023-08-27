@@ -8,10 +8,11 @@
 }
 
 .result_cards {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    place-items: center;
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 2.5rem;
 }
 
 .search_msg {
@@ -66,12 +67,15 @@
     overflow: hidden;
     border-radius: 3px;
     position: relative;
-    width: var(--movie-card-width);
-    aspect-ratio: 12/16;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 160px;
     animation: zoomOutImage .5s forwards;
+}
+
+.video_showcase img{
+    width: 100%;
+    aspect-ratio: 12/16;
+    object-fit: cover;
+    object-position: center;
 }
 
 .video_showcase:hover {

@@ -1,22 +1,20 @@
 import "../css/Result.css";
-import { useContext, useState } from "react";
+import { useContext, useEffect } from "react";
 import Searchbox from "./Searchbox";
 import ResultCard from "./ResultCard";
+import SearchContext from "../context/SearchContext";
+
 
 const Result = () => {
-  const [movieName, setMovieName] = useState(location.search.split("?q=")[1]);
-  function renderCardLoop() {
-    let cards = [];
-    for (let i = 0; i < 10; i++) {
-      cards.push(<ResultCard key={i}/>);
-    }
-    return cards;
-  }
+  const {searchData} = useContext(SearchContext);
+  // console.log(searchData)
   return (
     <div className="results">
-      <Searchbox className="search_container" fun={setMovieName} />
-      <h3 className="search_msg">Search Result of {movieName} </h3>
-      <div className="result_cards">{renderCardLoop()}</div>
+      <Searchbox className="search_container" />
+      <h3 className="search_msg">Search Result of MovieName </h3>
+      <div className="result_cards">{
+        searchData.map( card => <ResultCard key={card.id} {...card} /> )
+      }</div>
     </div>
   );
 };

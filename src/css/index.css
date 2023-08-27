@@ -26,6 +26,7 @@ html {
   color: #fff;
   font-family: Poppins;
   letter-spacing: 1px;
+  scroll-behavior: smooth;
 }
 
 a {
