@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
+
 function ResultCard(card) {
   const API_IMG = "https://image.tmdb.org/t/p/w500";
+
   return (
-    <a className="video_card" href="">
+    <Link to={"/movie/" + card.id} className="video_card" href="">
       <div className="video_showcase">
         <img src={API_IMG+card.poster_path} alt="" />
         <div className="linear_gradient"></div>
@@ -25,7 +28,7 @@ function ResultCard(card) {
           <p className="tags">video tags</p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 

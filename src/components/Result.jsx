@@ -2,12 +2,11 @@ import "../css/Result.css";
 import { useContext, useEffect } from "react";
 import Searchbox from "./Searchbox";
 import ResultCard from "./ResultCard";
-import SearchContext from "../context/SearchContext";
-
+import SearchContext from "../context/SearchContext"
 
 const Result = () => {
-  const {searchData} = useContext(SearchContext);
-  // console.log(searchData)
+  const {searchData} = useContext(SearchContext)
+  
   return (
     <div className="results">
       <Searchbox className="search_container" />

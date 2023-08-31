@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 
 const Searchbox = (props) => {
   const navigator = useNavigate();
-  function getResults(e) {
-    e.preventDefault();
-    navigator("/search?q=" + e.target.search.value);
+  function updateNav(e) {
+    e.preventDefault()
+    navigator("/search/" + e.target.search.value)
   }
 
   return (
-    <form className={props.className} onSubmit={getResults}>
+    <form className={props.className} onSubmit={updateNav}>
       <div className="search_child_container">
         <input
           type="text"
