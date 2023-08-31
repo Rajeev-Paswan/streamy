@@ -10,7 +10,9 @@ const Search = () => {
   const { getMovies, query, updateQuery } = useContext(SearchContext);
 
   useEffect(() => {
-    if(query !== paramsQuery){
+    if(paramsQuery === undefined || "") {
+      updateQuery("shin chan")
+    } else {
       updateQuery(paramsQuery);
       console.log("updated query: " + paramsQuery);
       getMovies(); // fetch movies from updated query
