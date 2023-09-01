@@ -26,7 +26,6 @@ export function SearchProvider({ children }) {
     })
   };
 
-  // whenever updateQuery is called or the query is changed, getMovies will be updated with the new query
   useEffect(() => {
     getMovies()
   }, [searchData])

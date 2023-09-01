@@ -7,11 +7,11 @@ import SearchContext from "../context/SearchContext";
 
 const Search = () => {
   const { query: paramsQuery } = useParams(); // stores params query into paramsQuery
-  const { getMovies, query, updateQuery } = useContext(SearchContext);
+  const { getMovies, updateQuery } = useContext(SearchContext);
 
   useEffect(() => {
     if(paramsQuery === undefined || "") {
-      updateQuery("shin chan")
+      alert("return to homepage and enter a movie name");
     } else {
       updateQuery(paramsQuery);
       console.log("updated query: " + paramsQuery);

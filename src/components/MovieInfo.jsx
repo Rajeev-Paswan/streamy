@@ -1,7 +1,6 @@
 
 
-const MovieInfo = (card) => {
-  console.log(card)
+const MovieInfo = () => {
   return (
     <div>MovieInfo</div>
   )
