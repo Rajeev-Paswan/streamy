@@ -17,16 +17,21 @@ export function DetailsProvider({children}) {
 
     // fetch movie details
     const getDetails = () => {
-        fetch(`${API_URL}${movieId}?api_key=${API_KEY}`)
-        .then(response => response.json())
-        .then(data => {
-            setDetails(data);
-        })
+        if(movieId == "") {
+            return;
+        } else {
+            fetch(`${API_URL}${movieId}?api_key=${API_KEY}`)
+            .then(response => response.json())
+            .then(data => {
+                setDetails(data);
+                console.log(data)
+            })
+        }
     }
 
+    // run again if movie id has changed
     useEffect(() => {
         getDetails()
-        console.log(details);
     }, [movieId])
 
     return (
