@@ -1,0 +1,12 @@
+video {
+    aspect-ratio: 16/9;
+    width: 75%;
+    border: 1px solid white;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3);
+    margin-top: 2rem;
+}
+
+.video_container {
+    display: flex;
+    justify-content: center;
+}

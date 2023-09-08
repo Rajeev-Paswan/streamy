@@ -1,0 +1,42 @@
+.movie_data-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    background-color: var(--color-1);
+    padding-block: 2rem;
+    margin-top: 4rem;
+}
+
+.movie_poster {
+    overflow: hidden;
+}
+
+.movie_poster img {
+    width: 180px;
+    aspect-ratio: 2/3;
+    border-radius: 3px;
+}
+
+.extra_info {
+    display: flex;
+}
+
+.extra_info > .imdb_ratings-container {
+    display: flex;
+}
+.imdb_ratings-container .material-icons-round {
+    color: gold;
+}
+
+.movie_details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+}
+
+.movie_overview {
+    font-weight: 300;
+    letter-spacing: 0;
+    font-size: 15px;
+}
