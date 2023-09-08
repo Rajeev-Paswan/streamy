@@ -5,6 +5,7 @@
     background-color: var(--color-1);
     padding-block: 2rem;
     margin-top: 4rem;
+    cursor: default;
 }
 
 .movie_poster {
@@ -14,15 +15,17 @@
 .movie_poster img {
     width: 180px;
     aspect-ratio: 2/3;
-    border-radius: 3px;
+    border-radius: 6px;
 }
 
 .extra_info {
     display: flex;
+    margin-bottom: 0.75rem;
 }
 
 .extra_info > .imdb_ratings-container {
     display: flex;
+    margin-left: 0.75rem;
 }
 .imdb_ratings-container .material-icons-round {
     color: gold;
@@ -32,11 +35,27 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    gap: 1rem;
+}
+
+.movie_title {
+    margin-bottom: 1rem;
 }
 
 .movie_overview {
     font-weight: 300;
     letter-spacing: 0;
     font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0.25rem;
+}
+
+.info_type {
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--info-card-color);
 }

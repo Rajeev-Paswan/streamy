@@ -6,8 +6,7 @@ function ResultCard(card) {
   return (
     <Link to={"/movie/" + card.id} className="video_card" href="">
       <div className="video_showcase">
-        <img src={card.poster_path ? API_IMG+card.poster_path : "/img/404-error.png" } alt="" />
-        {/* <img src={API_IMG+card.poster_path} alt="" /> */}
+        <img src={card.poster_path ? API_IMG+card.poster_path : "/img/404-error.png" } alt="poster" />
         <div className="linear_gradient"></div>
         <div className="rating">
           <span className="material-icons-round icon">star_rate</span>
