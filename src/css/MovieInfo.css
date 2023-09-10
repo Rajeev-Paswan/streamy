@@ -1,61 +1,65 @@
 .movie_data-container {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    background-color: var(--color-1);
-    padding-block: 2rem;
-    margin-top: 4rem;
-    cursor: default;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  background-color: var(--color-1);
+  padding-block: 2rem;
+  margin-top: 4rem;
+  cursor: default;
+}
+
+.movie_data-wrapper {
+  display: flex;
+  gap: 2rem;
+  width: 75%;
 }
 
 .movie_poster {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .movie_poster img {
-    width: 180px;
-    aspect-ratio: 2/3;
-    border-radius: 6px;
+  width: 180px;
+  aspect-ratio: 2/3;
+  border-radius: 6px;
+}
+
+.extra_info,
+.imdb_quality-container,
+.imdb_ratings-container {
+  align-items: center;
+  display: flex;
 }
 
 .extra_info {
-    display: flex;
-    margin-bottom: 0.75rem;
+  gap: 1rem;
 }
 
-.extra_info > .imdb_ratings-container {
-    display: flex;
-    margin-left: 0.75rem;
-}
 .imdb_ratings-container .material-icons-round {
-    color: gold;
+  color: gold;
 }
 
 .movie_details {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.movie_title {
-    margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 1rem;
 }
 
 .movie_overview {
-    font-weight: 300;
-    letter-spacing: 0;
-    font-size: 15px;
-    margin-bottom: 0.5rem;
+  font-weight: 300;
+  letter-spacing: 0;
+  font-size: 15px;
 }
 
 .info-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 0.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 0.25rem;
 }
 
 .info_type {
-    font-weight: bold;
-    font-size: 16px;
-    color: var(--info-card-color);
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--info-card-color);
 }

@@ -2,18 +2,25 @@ import "../css/Result.css";
 import { useContext, useEffect } from "react";
 import Searchbox from "./Searchbox";
 import ResultCard from "./ResultCard";
-import SearchContext from "../context/SearchContext"
+import SearchContext from "../context/SearchContext";
 
 const Result = () => {
-  const {searchData} = useContext(SearchContext)
-  
+  const { searchData } = useContext(SearchContext);
+
   return (
     <div className="results">
       <Searchbox className="search_container" />
-      <h3 className="search_msg">Search Result of MovieName </h3>
-      <div className="result_cards">{
-        searchData.map( card => <ResultCard key={card.id} {...card} /> )
-      }</div>
+      <span className="search_msg">
+        Search Result of{" "}
+        <strong>
+          {location.pathname.split("search/")[1].replaceAll("-", " ")}
+        </strong>
+      </span>
+      <div className="result_cards">
+        {searchData.map((card) => (
+          <ResultCard key={card.id} {...card} />
+        ))}
+      </div>
     </div>
   );
 };

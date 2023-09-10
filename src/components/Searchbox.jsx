@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 const Searchbox = (props) => {
   const navigator = useNavigate();
   function updateNav(e) {
-    e.preventDefault()
-    navigator("/search/" + e.target.search.value)
+    e.preventDefault();
+    navigator("/search/" + e.target.search.value.replaceAll(" ", "-"));
   }
 
   return (

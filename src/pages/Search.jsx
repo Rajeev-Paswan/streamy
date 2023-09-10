@@ -10,22 +10,22 @@ const Search = () => {
   const { getMovies, updateQuery } = useContext(SearchContext);
 
   useEffect(() => {
-    if(paramsQuery === undefined || "") {
+    if (paramsQuery === undefined || "") {
       alert("return to homepage and enter a movie name");
     } else {
       updateQuery(paramsQuery);
       console.log("updated query: " + paramsQuery);
       getMovies(); // fetch movies from updated query
-      console.log("Search data is updated")
-    } 
+      console.log("Search data is updated");
+    }
   }, [paramsQuery]);
 
   return (
-    <div>
+    <>
       <Header />
       <Result />
       <Footer />
-    </div>
+    </>
   );
 };
 

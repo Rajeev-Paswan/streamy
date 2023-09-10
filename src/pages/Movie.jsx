@@ -8,12 +8,12 @@ const Movie = () => {
 
 
   return (
-    <div>
+    <>
       <Header />
       <Video />
       <MovieInfo />
       <Footer />
-    </div>
+    </>
   );
 };
 

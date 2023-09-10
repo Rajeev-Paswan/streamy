@@ -1,42 +1,53 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1.5rem;
+  color: #fff;
+  gap: 4rem;
+  min-height: 6rem;
 }
 
 .navbar .site_name {
-    font-size: 2rem;
-    font-weight: bolder;
+  font-size: 2rem;
+  font-weight: bolder;
 }
 
 .navbar .nav_items {
-    display: flex;
-    gap: 4rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .navbar .nav_items .item {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .nav_bar.search_container {
-    visibility: hidden;
-    padding: 0 2rem;
-    border-radius: 9rem;
-    position: relative;
-    width: calc(100% / 3);
-    transform: none;
-    left: 0;
-    top: 0;
-    height: 3rem;
+  visibility: hidden;
+  padding: 0 2rem;
+  border-radius: 9rem;
+  position: relative;
+  width: calc(100% / 3);
+  transform: none;
+  left: 0;
+  top: 0;
+  height: 3rem;
+  display: flex;
+  margin-left: auto;
 }
 
 .nav_bar.search_container input {
-    font-size: 1rem;
-    width: 100%;
+  font-size: 1rem;
+  width: 100%;
 }
 
 .nav_bar.search_container .search_child_container button span {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .nav_items,
+  .navbar .search_container {
+    display: none;
+  }
 }

@@ -24,7 +24,7 @@
   background-size: cover;
   height: 60vh;
   width: 100%;
-  filter: brightness(.8);
+  filter: brightness(0.8);
   animation: changeWallpaper 30s ease-in-out infinite;
 }
 
@@ -46,25 +46,24 @@
 
 /* changing wallpaper */
 @keyframes changeWallpaper {
-
   0%,
   100% {
-      background-image: url("../img/bg_1.jpg");
-      background-position: 0 20%;
+    background-image: url("../img/bg_1.jpg");
+    background-position: 0 20%;
   }
 
   25% {
-      background-image: url("../img/bg_2.jpg");
-      background-position: 0 40%;
+    background-image: url("../img/bg_2.jpg");
+    background-position: 0 40%;
   }
 
   50% {
-      background-image: url("../img/bg_3.jpg");
-      background-position: 0 50%;
+    background-image: url("../img/bg_3.jpg");
+    background-position: 0 50%;
   }
 
   75% {
-      background-image: url("../img/bg_4.jpg");
-      background-position: 0 40%;
+    background-image: url("../img/bg_4.jpg");
+    background-position: 0 40%;
   }
 }

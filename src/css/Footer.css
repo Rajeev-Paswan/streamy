@@ -1,8 +1,12 @@
 .footer_container {
-    margin-top: 4rem;
-    background-color: var(--movie-card-color-2);
+  margin-top: 4rem;
+  background-color: var(--movie-card-color-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5rem;
 }
 
 .footer_text {
-    text-align: center;
+  text-align: center;
 }
