@@ -28,7 +28,7 @@ export function SearchProvider({ children }) {
 
   useEffect(() => {
     getMovies()
-  }, [searchData])
+  }, [query])
 
   return (
     <SearchContext.Provider value={ {query, searchData, getMovies, updateQuery} }>{children}</SearchContext.Provider>
