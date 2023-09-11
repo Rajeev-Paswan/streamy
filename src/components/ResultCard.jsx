@@ -4,7 +4,7 @@ function ResultCard(card) {
   const API_IMG = "https://image.tmdb.org/t/p/w500";
 
   return (
-    <Link to={"/streamy/movie/" + card.id} className="video_card" href="">
+    <Link to={"/movie/" + card.id} className="video_card" href="">
       <div className="video_showcase">
         <img
           src={

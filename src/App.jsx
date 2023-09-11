@@ -10,10 +10,10 @@ function App() {
     <SearchProvider>
       <DetailsProvider>
         <Routes>
-          <Route path="/streamy" element={<Home />} />
-          <Route path="/streamy/search" element={<Search />} />
-          <Route path="/streamy/search/:query" element={<Search />} />
-          <Route path="/streamy/movie/:id" element={<Movie />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/search/:query" element={<Search />} />
+          <Route path="/movie/:id" element={<Movie />} />
         </Routes>
       </DetailsProvider>
     </SearchProvider>
