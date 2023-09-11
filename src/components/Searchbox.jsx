@@ -5,7 +5,7 @@ const Searchbox = (props) => {
   const navigator = useNavigate();
   function updateNav(e) {
     e.preventDefault();
-    navigator("/search/" + e.target.search.value.replaceAll(" ", "-"));
+    navigator("/streamy/search/" + e.target.search.value.replaceAll(" ", "-"));
   }
 
   return (
