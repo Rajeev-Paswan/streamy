@@ -7,8 +7,8 @@ const SearchContext = createContext();
 
 // context provider function
 export function SearchProvider({ children }) {
-  const apiKey = import.meta.env.VITE_API_KEY;
-  const API_URL = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}`;
+  const API_KEY = `88b693131fd0d28f6ad3a9be6b2e10b8`;
+  const API_URL = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}`;
 
   const [query, setQuery] = useState("");
   const [searchData, setSearchData] = useState([]); // for api data
