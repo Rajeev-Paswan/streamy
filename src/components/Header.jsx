@@ -3,7 +3,7 @@ import "../css/Header.css";
 function Header() {
   return (
     <div className="navbar">
-      <a href="/">
+      <a href="/streamy/">
         <div className="site_name">Movie Stream</div>
       </a>
       <div className="nav_items">

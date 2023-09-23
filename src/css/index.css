@@ -27,6 +27,7 @@
 
 .material-icons-round {
   display: flex !important;
+  user-select: none;
 }
 
 body,

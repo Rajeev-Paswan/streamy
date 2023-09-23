@@ -1,4 +1,6 @@
 .navbar {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,6 +8,8 @@
   color: #fff;
   gap: 4rem;
   min-height: 6rem;
+  z-index: 9999;
+  background: var(--color-2);
 }
 
 .navbar .site_name {
