@@ -11,7 +11,7 @@
 .movie_data-wrapper {
   display: flex;
   gap: 2rem;
-  width: 75%;
+  width: 80%;
 }
 
 .movie_poster {
@@ -19,7 +19,7 @@
 }
 
 .movie_poster img {
-  width: 180px;
+  width: 12rem;
   aspect-ratio: 2/3;
   border-radius: 6px;
 }
@@ -49,7 +49,7 @@
 .movie_overview {
   font-weight: 300;
   letter-spacing: 0;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .info-grid {
@@ -60,6 +60,17 @@
 
 .info_type {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--info-card-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .movie_data-wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .movie_details {
+    width: 100%;
+  }
 }

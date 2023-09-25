@@ -4,14 +4,42 @@
 }
 
 .video_box {
+  gap: 1rem;
   aspect-ratio: 16/9;
-  width: 75%;
+  width: 80%;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+}
+
+.server_list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.server_list select {
+  outline: none;
+  border: none;
+  background: var(--color-1);
+  color: white;
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 30px;
 }
 
 iframe {
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .video_box {
+    width: 100%;
+  }
+  .server_list{
+    padding-inline: 1rem;
+  }
 }

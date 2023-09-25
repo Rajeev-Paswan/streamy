@@ -18,6 +18,12 @@
   transform: translateX(-50%);
 }
 
+@media only screen and (max-width: 600px) {
+  .search_container.floating {
+    width: 80%;
+  }
+}
+
 .search_container input::placeholder {
   color: var(--placeholder-color);
 }

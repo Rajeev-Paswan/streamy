@@ -6,33 +6,30 @@ const Video = () => {
   const { id } = useParams();
   const [server, setServer] = useState("vidsrc");
   const [src, setSrc] = useState("");
-  
+
   // setting initial src based on default server
   useEffect(() => {
-    setSrc(`https://vidsrc.to/embed/movie/${id}`)
+    setSrc(`https://vidsrc.to/embed/movie/${id}`);
   }, [id]);
 
   const handleServerChange = (e) => {
     const server = e.target.value;
     setServer(server);
-    
+
     // set the src based on selected server
-    if(server === "vidsrc") {
+    if (server === "vidsrc") {
       setSrc(`https://vidsrc.to/embed/movie/${id}`);
-    } else if(server === "smashy") {
+    } else if (server === "smashy") {
       setSrc(`https://embed.smashystream.com/playere.php?tmdb=${id}`);
     }
   };
 
   return (
     <div className="video_container">
-      <div className="video_box">
-        <iframe
-          src={src}
-          frameBorder={0}
-          allowFullScreen
-        ></iframe>
-        <div>
+      <div className="video_box"> 
+        <iframe src={src} frameBorder={0} allowFullScreen></iframe>
+        <div className="server_list">
+          <h2>Server</h2>
           <select value={server} onChange={handleServerChange}>
             <option value="vidsrc">vidsrc</option>
             <option value="smashy">smashy</option>
@@ -44,4 +41,3 @@ const Video = () => {
 };
 
 export default Video;
-

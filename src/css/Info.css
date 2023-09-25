@@ -15,8 +15,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-wrap: balance;
 }
 
 .card .icon span {
   font-size: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .info {
+    width: 80%;
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
 }

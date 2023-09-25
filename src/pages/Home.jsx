@@ -9,7 +9,7 @@ function Home() {
         <div className="img_container">
           <div className="image"></div>
           <div className="linear_gradient"></div>
-          <h1>Movie Stream</h1>
+          <h1>Streamy</h1>
         </div>
         <Searchbox className="search_container floating" />
       </div>

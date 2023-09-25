@@ -1,15 +1,25 @@
 .navbar {
   position: sticky;
   top: 0;
+  width: 100%;
+  background: var(--color-2);
+  margin-bottom: 1rem;
+  min-height: 10vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.navbar_container {
+  height: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 1.5rem;
+  text-wrap: nowrap;
   color: #fff;
   gap: 4rem;
-  min-height: 6rem;
-  z-index: 9999;
-  background: var(--color-2);
 }
 
 .navbar .site_name {

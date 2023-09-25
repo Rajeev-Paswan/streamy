@@ -66,9 +66,7 @@ const MovieInfo = () => {
                   {data?.spoken_languages.map((language, index) => (
                     <a key={index}>
                       {language.english_name}
-                      {index !== data?.spoken_languages.length - 1
-                        ? ", "
-                        : ""}
+                      {index !== data?.spoken_languages.length - 1 ? ", " : ""}
                     </a>
                   ))}
                 </span>
