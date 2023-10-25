@@ -18,7 +18,7 @@
 
 .img_container .image {
   position: absolute;
-  background-image: url("../img/bg_1.jpg");
+  background-image: url("../../public/img/bg_1.jpg");
   background-position: 50% 20%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,22 +49,22 @@
 @keyframes changeWallpaper {
   0%,
   100% {
-    background-image: url("../img/bg_1.jpg");
+    background-image: url("../../public/img/bg_1.jpg");
     background-position: 50% 20%;
   }
 
   25% {
-    background-image: url("../img/bg_2.jpg");
+    background-image: url("../../public/img/bg_2.jpg");
     background-position: 50% 40%;
   }
 
   50% {
-    background-image: url("../img/bg_3.jpg");
+    background-image: url("../../public/img/bg_3.jpg");
     background-position: 50% 50%;
   }
 
   75% {
-    background-image: url("../img/bg_4.jpg");
+    background-image: url("../../public/img/bg_4.jpg");
     background-position: 50% 40%;
   }
 }
